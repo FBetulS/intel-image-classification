@@ -3,6 +3,9 @@
 ## 📖 Proje Açıklaması
 Bu proje, Intel'in görüntü sınıflandırma veri setini kullanarak derin öğrenme tabanlı bir model geliştirmeyi amaçlamaktadır. Model, çeşitli görüntüleri sınıflandırmak için konvolüsyonel sinir ağı (CNN) mimarisi kullanır. Proje, görüntü artırma teknikleri ile modelin genel performansını artırmayı hedefler.
 
+⚠️ Not
+3D grafiklerim ve görselleştirmelerim maalesef gözükmüyor. Bu durum, bazı tarayıcı veya platform uyumsuzluklarından kaynaklanabilir.
+
 ## 🔗 Veri Kümesi
 Veri kümesi, [Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification/data) adresinden alınmıştır. Bu veri seti, farklı sınıflara ait görüntüleri içerir ve modelin eğitim ve test aşamalarında kullanılmak üzere düzenlenmiştir.
 
