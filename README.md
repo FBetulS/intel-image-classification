@@ -1,40 +1,31 @@
-# Intel Image Classification
+---
+title: Intel Image Classification
+emoji: 🏞️
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.27.0
+app_file: app.py
+pinned: false
+---
 
-## 📖 Proje Açıklaması
-Bu proje, Intel'in görüntü sınıflandırma veri setini kullanarak derin öğrenme tabanlı bir model geliştirmeyi amaçlamaktadır. Model, çeşitli görüntüleri sınıflandırmak için konvolüsyonel sinir ağı (CNN) mimarisi kullanır. Proje, görüntü artırma teknikleri ile modelin genel performansını artırmayı hedefler.
+# Intel Image Classifier
 
-⚠️ Not
-3D grafiklerim ve görselleştirmelerim maalesef gözükmüyor. Bu durum, bazı tarayıcı veya platform uyumsuzluklarından kaynaklanabilir.
+This Streamlit application uses a deep learning model trained on the Intel Image Classification dataset to classify images into six categories:
+- Buildings
+- Forest
+- Glacier
+- Mountain
+- Sea
+- Street
 
-## 🔗 Veri Kümesi
-Veri kümesi, [Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification/data) adresinden alınmıştır. Bu veri seti, farklı sınıflara ait görüntüleri içerir ve modelin eğitim ve test aşamalarında kullanılmak üzere düzenlenmiştir.
+## How to use
+1. Upload an image using the file uploader or take a photo with your camera
+2. Click the "Classify Image" button
+3. View the prediction results and confidence scores
 
-## 🔗 Hugging Face Uygulaması
-Ayrıca, projenin etkileşimli bir versiyonu [Intel Image Classification - Hugging Face Space](https://huggingface.co/spaces/btulftma/intel-image-classification) adresinde bulunmaktadır.
+## Model Details
+The model is a CNN trained on Intel's image classification dataset with ~80% accuracy.
 
-## 🛠️ Kullanılan Kütüphaneler
-- `tensorflow`: Derin öğrenme modeli geliştirmek için.
-- `matplotlib`: Görselleştirme için.
-- `numpy`: Sayısal işlemler için.
-
-## 📁 Veri Yapısı
-- `seg_train`: Eğitim verileri.
-- `seg_test`: Test verileri.
-- `seg_pred`: Tahmin verileri.
-
-## 📈 Model Mimarisi
-Model aşağıdaki katmanları içerir:
-1. **Conv2D**: Görüntüden özellik çıkarmak için.
-2. **MaxPooling2D**: Boyutları küçültmek için.
-3. **Flatten**: Çok boyutlu veriyi tek boyutlu hale getirmek için.
-4. **Dense**: Sınıflandırma görevini gerçekleştirmek için.
-5. **Dropout**: Aşırı öğrenmeyi önlemek için.
-
-## 📊 Eğitim Süreci
-Model, aşağıdaki gibi eğitim verileri ile eğitilir:
-```python
-history = model.fit(
-    train_generator,
-    epochs=10,
-    validation_data=val_generator
-)
+## Dataset
+The Intel Image Classification dataset contains around 14,000 images of natural scenes from around the world.
